@@ -19,13 +19,13 @@ ${mensajeAMostrar}
 		<th>Genero</th>
 	</thead>
 	<tbody>
-		<c:forEach begin="1" end="${registros}" step="1" varStatus="loopCounter">
+		<c:forEach items="${personaList}" var="item">
 		<tr>
-			<td><c:out value="${persona.nombre}"></c:out></td>
-			<td><c:out value="${persona.apellido}"></c:out></td>
-			<td><c:out value="${persona.dni}"></c:out></td>
-			<td><c:out value="${persona.edad}"></c:out></td>
-			<td><c:out value="${persona.genero}"></c:out></td>
+			<td><c:out value="${item.nombre}"></c:out></td>
+			<td><c:out value="${item.apellido}"></c:out></td>
+			<td><c:out value="${item.dni}"></c:out></td>
+			<td><c:out value="${item.edad}"></c:out></td>
+			<td><c:out value="${item.genero}"></c:out></td>
 		</tr>
 		</c:forEach>
 	</tbody>
